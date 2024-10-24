@@ -1,0 +1,61 @@
+body {
+    background-image: linear-gradient(to bottom, #0d47a1, #1565c0, #1e88e5, #42a5f5, #64b5f6);
+    background-attachment: fixed;
+}
+
+button {
+    background-image: linear-gradient(to right, #1e3a8a, #1d4ed8, #2563eb, #3b82f6, #60a5fa);
+    color: white;
+}
+
+.c-user {
+    font-size: 35px;
+    color: white;
+    position: relative;
+}
+
+/* Ícono del título más destacado */
+.text-highlight {
+    color: #f25a87;
+    font-size: 60px;
+}
+
+form {
+    background-color: rgba(0, 0, 50, 0.4); 
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.form-control {
+    color: white;
+    background-color: rgba(0, 0, 50, 0);
+    border: none;
+    border-bottom: solid white 2px;
+}
+.form-control:focus {
+    color: white;
+    border: none;
+    border-bottom: solid white 2px;
+    box-shadow: none;
+    background-color: rgba(0, 0, 50, 0);
+}
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.c-input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+/* Transición suave para el botón */
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e88e5;
+    transform: scale(1.05);
+}

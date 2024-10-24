@@ -1,0 +1,121 @@
+/* Estilos del body */
+body {
+    background-color: #001f3f;
+}
+
+/* Estilos del formulario */
+form {
+    background-color: rgba(0, 128, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 128, 0.3);
+    padding: 20px;
+    width: 100%; /* El formulario ocupa el 100% del ancho en pantallas pequeñas */
+    max-width: 450px; /* Máximo ancho del formulario en pantallas grandes */
+}
+
+/* Estilos del ícono de usuario */
+.c-user {
+    font-size: 3em;
+    color: #007bff;
+}
+
+/* Estilos de los íconos dentro de los inputs */
+.input-group-text {
+    background-color: rgba(0, 128, 255, 0.1);
+    color: #007bff;
+    border: none;
+    font-size: 1.5em;
+}
+
+/* Estilos de los inputs */
+.form-control {
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-bottom: solid 2px #007bff;
+    color: #fff;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilos del botón de ingresar */
+.c-button button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%;
+}
+
+.c-button button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos de los textos */
+.text-white {
+    color: #fff;
+}
+
+.text-primary {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Estilos del enlace "Crear ahora" */
+a.text-primary:hover {
+    color: #0056b3;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .c-user {
+        font-size: 2.5em;
+    }
+
+    .form-control {
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    .input-group-text {
+        font-size: 1.2em;
+    }
+
+    .c-button button {
+        padding: 8px;
+        font-size: 1em;
+    }
+}
+
+/* Media Queries para pantallas aún más pequeñas (móviles) */
+@media (max-width: 576px) {
+    form {
+        padding: 15px;
+    }
+
+    .c-user {
+        font-size: 2em;
+    }
+
+    .form-control {
+        padding: 7px;
+        font-size: 0.9em;
+    }
+
+    .input-group-text {
+        font-size: 1em;
+    }
+
+    .c-button button {
+        padding: 7px;
+        font-size: 0.9em;
+    }
+}
