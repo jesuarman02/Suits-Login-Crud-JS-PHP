@@ -1,5 +1,6 @@
 <?php
-define('CSS','public/css/');
-define('ICONS','public/css/icons/font/');
-define('JS','public/js/');
+define('SERVIDOR', 'http://localhost/suits/unidad2/proyecto/');
+define('CSS',SERVIDOR.'public/css/');
+define('ICONS',SERVIDOR.'public/css/icons/font/');
+define('JS',SERVIDOR.'public/js/');
 ?>
