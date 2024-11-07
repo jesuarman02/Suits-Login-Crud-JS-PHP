@@ -1,10 +1,7 @@
 <?php
 require_once("./app/config/dependencias.php");
 
-// session_start();
-// if (!isset($_SESSION['usuario'])) {
-//     header("location: ./login.php");
-// }
+
 ?>
 
 <!DOCTYPE html>
@@ -45,6 +42,10 @@ require_once("./app/config/dependencias.php");
             }
             case "registro":{
                 require_once './views/registro.php';
+                break;
+            }
+            case "cerrar_sesion":{
+                require_once './app/controller/cerrar_sesion.php';
                 break;
             }
             default:{

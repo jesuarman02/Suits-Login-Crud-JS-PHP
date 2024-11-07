@@ -1,5 +1,13 @@
+<?php 
+
+session_start();
+if (isset($_SESSION['usuario'])) {
+    header("location:inicio");
+}
+?>
+
 <link rel="stylesheet" href="<?=CSS."main.css";?>">
-<form action="./login.php" method="post" class="w-50 p-5">
+<form action="login" method="post" class="w-50 p-5">
         <div class="text-center mb-5 c-user">
             <i class="bi bi-person-circle fs-1 text-highlight"></i>
             <div class="text-highlight fs-4">Iniciar Sesión</div>
@@ -17,7 +25,7 @@
         </div>
         <div class="mt-4 d-flex justify-content-center">
             <p class="text-white">¿No tienes una cuenta?</p> 
-            <a href="./registro_vista.php" class="text-primary mx-3">Crear ahora</a>
+            <a href="registro" class="text-primary mx-3">Crear ahora</a>
         </div>
     </form>
     <script src="./public/js/alerts.js"></script>

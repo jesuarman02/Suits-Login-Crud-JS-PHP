@@ -1,6 +1,12 @@
+<?php
+session_start();
+if (isset($_SESSION['usuario'])) {
+    header("location:registro");
+}
+?>
 <link rel="stylesheet" href="<?=CSS."registro_vista.css";?>">
 
-    <form action="./registro_vista.php" method="post" class="w-50 p-4 text-center">
+    <form action="inicio" method="post" class="w-50 p-4 text-center">
         <div class="text-center mb-4 c-user">
             <i class="bi bi-stars fs-1 text-highlight"></i> 
             <h2 class="text-white d-inline-block mx-2">Página de Registro</h2>

@@ -32,7 +32,7 @@ const validar_usuario = (event) => {
           timer: 1000,
           showConfirmButton: false,
         });
-        window.location = "index.php";
+        window.location = "inicio";
       } else {
         Swal.fire({
           icon: "error",
@@ -114,7 +114,7 @@ body: data,
           timer: 1000,
           showConfirmButton: false,
         });
-        window.location = "login.php";
+        window.location = "login";
       } else {
         Swal.fire({
           icon: "error",

@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+if (!isset($_SESSION['usuario'])) {
+header("location:login");
+exit();
+    
+}
+?>
+
 <body class="vh-100">
     <div class="row m-4 c-datos">
         <div class="d-flex justify-content-around align-items-center w-100">
@@ -20,7 +30,7 @@
 
     <div class="row justify-content-center">
         <div class="col-8 p-5">
-            <form action="./index.php" method="post" class="p-4">
+            <form action="inicio" method="post" class="p-4">
                 <h2 class="text-center mb-4">Registrar Producto</h2>
                 <div class="input-group mt-3 c-input px-2 p-1 rounded-3">
                     <span class="input-group-text"><i class="bi bi-box"></i></span>

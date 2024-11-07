@@ -5,7 +5,7 @@ const cerrar_sesion = () => {
         timer: 1000, 
         showConfirmButton: false 
     }).then(() => {
-        window.location.href = "app/controller/cerrar_sesion.php"; 
+        window.location.href = "cerrar_sesion"; 
     });
 }
 

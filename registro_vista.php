@@ -1,12 +1,3 @@
-<?php
-require_once "./app/config/dependencias.php";
-session_start();
-
-if (isset($_SESSION['usuario'])) {
-    header("location: ./index.php");
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
