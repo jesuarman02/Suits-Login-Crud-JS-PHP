@@ -4,17 +4,19 @@ if (!isset($_SESSION)) {
 }
 ?>
 <style>
+    /* Estilos del menú de navegación */
     nav {
-        background-color: #f8c8dc; /* Rosa pastel */
+        background-color: #4c6a92; /* Azul oscuro */
         padding: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        color: #333;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        color: #f5f5f5;
     }
 
+    /* Contenedor centrado de texto */
     .text-center {
         display: flex;
         flex-direction: column;
@@ -23,20 +25,103 @@ if (!isset($_SESSION)) {
 
     .text-center h3 {
         margin: 0;
-        color: #333;
-        align-items: center;
+        color: #f5f5f5; /* Blanco para texto */
+        font-size: 1.8rem;
+        font-weight: bold;
     }
 
     .text-center p {
         margin: 0;
-        color: #555;
+        color: #d1d1d1; /* Gris claro para subtítulo */
+        font-size: 1rem;
     }
 
+    /* Estilos de los botones en el contenedor */
     .button-container {
         display: flex;
-        gap: 0.5rem;
+        gap: 0.7rem;
     }
+
+    .button-container button {
+        padding: 0.5rem 1.2rem;
+        background-color: #709bb0; /* Azul medio */
+        color: #f5f5f5;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .button-container button:hover {
+        background-color: #91b3c7; /* Azul más claro al pasar el mouse */
+        transform: scale(1.05);
+    }
+    /* Estilos para el modal */
+.modal-content {
+    background-color: #2f4f6f; /* Fondo azul oscuro */
+    color: #f5f5f5; /* Texto blanco */
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    border-bottom: 1px solid #91b3c7; /* Línea de división clara */
+}
+
+.modal-header .modal-title {
+    font-size: 1.5rem;
+    color: #d1d1d1;
+}
+
+.modal-body {
+    background-color: #3a5a7a; /* Azul intermedio para cuerpo */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.modal-body .form-label {
+    color: #b3c9d6; /* Color claro para etiquetas */
+    font-weight: bold;
+}
+
+.modal-body .form-control {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #709bb0; /* Borde azul */
+    border-radius: 5px;
+}
+
+.modal-footer {
+    border-top: 1px solid #91b3c7; /* Línea de división clara */
+    background-color: #2f4f6f; /* Fondo de pie de modal */
+}
+
+.modal-footer .btn-secondary {
+    background-color: #709bb0; /* Azul medio */
+    color: #f5f5f5;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #91b3c7; /* Azul más claro */
+}
+
+.modal-footer .btn-success {
+    background-color: #3cba92; /* Verde suave */
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn-success:hover {
+    background-color: #34a882; /* Verde más oscuro */
+}
+
 </style>
+
 
 <nav>
     <button class="btn btn-info me-2" id="btn-inicio" onclick="window.location.href='inicio'">

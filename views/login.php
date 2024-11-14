@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="../public/css/main.css">
 <form action="login" method="post" class="w-50 p-5">
         <div class="text-center mb-5 c-user">
             <i class="bi bi-person-circle fs-1 text-highlight"></i>

@@ -1,80 +1,151 @@
-/* Estilos del body */
+/* Estilo General */
 body {
-    background: linear-gradient(to left, #181A2F, #242E49, #37415C, #FDA481, #B4182D, #541628);
+    background: linear-gradient(0deg, #181A2F, #242E49, #37415C, #7e5140, #B4182D, #541628);
+    background-attachment: fixed;
+    color: #fff;
+    font-family: Arial, sans-serif;
 }
 
-/* Estilos del formulario */
-form {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    width: 100%; /* El formulario ocupa el 100% del ancho en pantallas pequeñas */
-    max-width: 450px; /* Máximo ancho del formulario en pantallas grandes */
-}
-
-/* Estilos del ícono de usuario */
-.c-user {
+/* Títulos */
+h3, .c-user {
     font-size: 3em;
-    color: #FDA481; /* Color de ícono de usuario */
+    color: #FDA481;
+    text-align: center;
 }
 
-/* Estilos de los íconos dentro de los inputs */
+/* Formulario General */
+form {
+    background-color: rgba(0, 0, 50, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Inputs y Placeholders */
+.form-control {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-bottom: solid white 2px;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.form-control:focus {
+    border-bottom: solid #FDA481 2px;
+    box-shadow: 0 0 5px rgba(255, 168, 129, 0.5);
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Íconos dentro de Inputs */
 .input-group-text {
     background-color: rgba(255, 255, 255, 0.1);
-    color: #B4182D; /* Color de íconos dentro de inputs */
+    color: #B4182D;
     border: none;
     font-size: 1.5em;
 }
 
-/* Estilos de los inputs */
-.form-control {
+/* Botones Generales */
+button, .c-button button {
     padding: 10px;
-    font-size: 1.2em;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
-    border-bottom: solid 2px #B4182D; /* Color de borde */
-    color: #fff;
-}
-
-.form-control:focus {
-    outline: none;
-    border-color: #B4182D;
-    box-shadow: 0 0 5px rgba(255, 168, 129, 0.5); /* Color de sombra */
-}
-
-/* Estilos del botón de ingresar */
-.c-button button {
-    padding: 10px;
-    background-color: #B4182D; /* Color de fondo del botón */
-    color: #fff;
+    background-image: linear-gradient(to right, #1e3a8a, #1d4ed8, #2563eb, #3b82f6, #60a5fa);
+    color: white;
     border: none;
     border-radius: 8px;
     font-size: 1.2em;
+    width: 30%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
-    width: 100%;
 }
 
-.c-button button:hover {
-    background-color: #541628; /* Color de fondo del botón al pasar el mouse */
+button:hover, .c-button button:hover {
+    background-color: #1e88e5;
+    transform: scale(1.05);
+}
+.button-container button {
+    width: 30%; /* Set button width to 30% */
+    font-size: 0.9rem; /* Slightly smaller font */
+    padding: 0.3rem; /* Adjust padding as needed */
+    border-radius: 4px; /* Adjust rounding as needed */
 }
 
-/* Estilos de los textos */
-.text-white {
-    color: #fff;
+/* Texto y Enlaces Destacados */
+.text-highlight, .text-primary {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+.text-center h3, .text-center p {
+    color: #fff; /* White text for better visibility */
 }
 
-.text-primary {
-    color: #FDA481; /* Color de texto primario */
+a.text-primary:hover {
+    color: #541628;
     text-decoration: underline;
 }
 
-/* Estilos del enlace "Crear ahora" */
-a.text-primary:hover {
-    color: #541628; /* Color del enlace al pasar el mouse */
+/* Cajas de Datos */
+.c-datos, .modal-content, .table {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
-/* Media Queries para pantallas pequeñas */
+/* Tabla */
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+    font-size: 1rem;
+    color: #2d3a4b;
+}
+
+.table thead {
+    background-color: rgba(123, 195, 173, 0.8);
+    color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgba(220, 220, 220, 0.3);
+}
+
+.table tbody tr:hover {
+    background-color: rgba(123, 195, 173, 0.5);
+}
+
+/* Botones de Acción en Tablas */
+.action-btn {
+    padding: 8px 12px;
+    background-color: #76c7c0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #2d3a4b;
+}
+
+/* Estilos Específicos del Modal */
+.modal-header, .modal-footer {
+    border: none;
+    background-color: #76c7c0;
+}
+
+.modal-title {
+    color: #2d3a4b;
+}
+
+/* Media Queries para Responsividad */
 @media (max-width: 768px) {
     .c-user {
         font-size: 2.5em;
@@ -95,7 +166,6 @@ a.text-primary:hover {
     }
 }
 
-/* Media Queries para pantallas aún más pequeñas (móviles) */
 @media (max-width: 576px) {
     form {
         padding: 15px;
