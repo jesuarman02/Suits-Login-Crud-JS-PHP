@@ -1,12 +1,13 @@
 <?php
 require_once("./app/config/dependencias.php");
 
-
+session_start();
+require_once("./app/config/rutas.php");
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
+<?php require_once("./views/nav.php"); ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,41 +23,11 @@ require_once("./app/config/dependencias.php");
     <title>Formulario de datos</title>
 </head>
 
-<body>
-
-    <?php
-
-        if (isset($_REQUEST['view'])) {
-            $vista = $_REQUEST['view'];
-        }else{
-            $vista = "incio";
-        }
-        switch ($vista) {
-            case "inicio":{
-                require_once './views/home.php';
-                break;
-            }
-            case "login":{
-                require_once './views/login.php';
-                break;
-            }
-            case "registro":{
-                require_once './views/registro.php';
-                break;
-            }
-            case "cerrar_sesion":{
-                require_once './app/controller/cerrar_sesion.php';
-                break;
-            }
-            default:{
-                require_once './views/error404.php';
-                break;
-            }
-        }
-    ?>
-
-
-
+<body class="vh-100">
+    <?php require_once("./app/config/router.php"); ?>
+    <script src="./public/js/alerts.js"></script>
+    <script src="./public/js/registro_productos.js"></script>
+    <script src="./public/js/cerrar_session.js"></script>
+    <script src="./public/js/main.js"></script>
 </body>
-
 </html>

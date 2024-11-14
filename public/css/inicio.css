@@ -1,5 +1,5 @@
 body {
-    background-color: #a6fdd2; /* Fondo verde pastel */
+    background: linear-gradient(to right, #181A2F, #242E49, #37415C, #FDA481, #B4182D, #541628);
 }
 
 h3 {

@@ -1,9 +1,3 @@
-<?php
-session_start();
-if (isset($_SESSION['usuario'])) {
-    header("location:registro");
-}
-?>
 <link rel="stylesheet" href="<?=CSS."registro_vista.css";?>">
 
     <form action="inicio" method="post" class="w-50 p-4 text-center">

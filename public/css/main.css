@@ -1,13 +1,13 @@
 /* Estilos del body */
 body {
-    background-color: #001f3f;
+    background: linear-gradient(to left, #181A2F, #242E49, #37415C, #FDA481, #B4182D, #541628);
 }
 
 /* Estilos del formulario */
 form {
-    background-color: rgba(0, 128, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 128, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     padding: 20px;
     width: 100%; /* El formulario ocupa el 100% del ancho en pantallas pequeñas */
     max-width: 450px; /* Máximo ancho del formulario en pantallas grandes */
@@ -16,13 +16,13 @@ form {
 /* Estilos del ícono de usuario */
 .c-user {
     font-size: 3em;
-    color: #007bff;
+    color: #FDA481; /* Color de ícono de usuario */
 }
 
 /* Estilos de los íconos dentro de los inputs */
 .input-group-text {
-    background-color: rgba(0, 128, 255, 0.1);
-    color: #007bff;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #B4182D; /* Color de íconos dentro de inputs */
     border: none;
     font-size: 1.5em;
 }
@@ -33,20 +33,20 @@ form {
     font-size: 1.2em;
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
-    border-bottom: solid 2px #007bff;
+    border-bottom: solid 2px #B4182D; /* Color de borde */
     color: #fff;
 }
 
 .form-control:focus {
     outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #B4182D;
+    box-shadow: 0 0 5px rgba(255, 168, 129, 0.5); /* Color de sombra */
 }
 
 /* Estilos del botón de ingresar */
 .c-button button {
     padding: 10px;
-    background-color: #007bff;
+    background-color: #B4182D; /* Color de fondo del botón */
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -56,7 +56,7 @@ form {
 }
 
 .c-button button:hover {
-    background-color: #0056b3;
+    background-color: #541628; /* Color de fondo del botón al pasar el mouse */
 }
 
 /* Estilos de los textos */
@@ -65,13 +65,13 @@ form {
 }
 
 .text-primary {
-    color: #007bff;
+    color: #FDA481; /* Color de texto primario */
     text-decoration: underline;
 }
 
 /* Estilos del enlace "Crear ahora" */
 a.text-primary:hover {
-    color: #0056b3;
+    color: #541628; /* Color del enlace al pasar el mouse */
 }
 
 /* Media Queries para pantallas pequeñas */

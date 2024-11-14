@@ -2,6 +2,6 @@
 session_start();
 session_destroy();
 
-header("Location:login"); 
-exit;
+echo json_encode([1,'Sesion Cerrada'])
+
 ?>

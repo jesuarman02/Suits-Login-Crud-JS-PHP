@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#btn-editar').on('click', function() {
         $.ajax({
-            url: '/suits/unidad2/prueba/app/controller/obtener_datos_usuario.php', // Cambia la ruta según tu estructura
+            url: '/suits/unidad3/prueba/app/controller/obtener_datos_usuario.php', // Cambia la ruta según tu estructura
             method: 'GET',
             dataType: 'json',
             success: function(data) {
@@ -43,7 +43,7 @@ $(document).ready(function() {
             return;
         }
 
-        fetch('/suits/unidad2/prueba/app/controller/editar_sesion.php', {
+        fetch('/suits/unidad3/prueba/app/controller/editar_sesion.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
@@ -60,10 +60,10 @@ $(document).ready(function() {
                 // Confirmar si el usuario desea cerrar sesión
                 if (confirm("¿Deseas cerrar sesión?")) {
                     // Cerrar sesión
-                    fetch('/suits/unidad2/prueba/app/controller/cerrar_sesion.php', {
+                    fetch('/suits/unidad3/prueba/app/controller/cerrar_sesion.php', {
                         method: 'POST',
                     }).then(() => {
-                        window.location.href = '/suits/unidad2/prueba/login.php';
+                        window.location.href = '/suits/unidad3/prueba/login.php';
                     });
                 } else {
                     $('p.text-white.fs-2.m-0').text(email); 
